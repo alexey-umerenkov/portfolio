@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>404 — Страница не найдена</title>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+.er-pg{--ink:#161616;--paper:#F2F2F2;--lime:#BEFF00}
+.er-pg{--bg:#161616;--fg:#F2F2F2;--line:rgba(242,242,242,.18);--ac:#BEFF00;--acf:#161616;--pb:#161616;--pf:#BEFF00;--dot:#BEFF00;--tint:rgba(242,242,242,.07);--hv:#BEFF00}
+@media (prefers-color-scheme:light){.er-pg:not([data-theme="dark"]){--bg:#F2F2F2;--fg:#161616;--line:rgba(22,22,22,.18);--ac:#161616;--acf:#BEFF00;--pb:#BEFF00;--pf:#161616;--dot:#161616;--tint:rgba(22,22,22,.07);--hv:#161616}.er-pg:not([data-theme="dark"]) .er-tg svg{transform:rotate(180deg)}}
+.er-pg[data-theme="light"]{--bg:#F2F2F2;--fg:#161616;--line:rgba(22,22,22,.18);--ac:#161616;--acf:#BEFF00;--pb:#BEFF00;--pf:#161616;--dot:#161616;--tint:rgba(22,22,22,.07);--hv:#161616}
+.er-pg[data-theme="light"] .er-tg svg{transform:rotate(180deg)}
+@media (prefers-color-scheme:light){body{background:#F2F2F2}}
+:where(.er-pg) a{color:inherit;text-decoration:none}
+.er-pg{--pad:clamp(20px,4vw,56px);font-family:'Onest',sans-serif;background:var(--bg);color:var(--fg);min-height:100vh;min-height:100svh;display:flex;flex-direction:column;overflow-x:clip;-webkit-text-size-adjust:100%;line-height:normal;text-align:left}
+.er-w{width:100%;max-width:1440px;margin:0 auto;padding:0 var(--pad);box-sizing:border-box}
+.er-m{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.er-top{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+.er-nm{font-size:18px;font-weight:800}
+.er-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--dot);margin-right:8px}
+.er-tr{display:flex;align-items:center}
+.er-tg{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;margin-left:16px;background:transparent;color:var(--fg);border:1px solid var(--line);cursor:pointer;transition:border-color .2s}
+.er-tg:hover{border-color:var(--fg)}.er-tg:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+.er-tg svg{display:block;transition:transform .4s ease}
+.er-main{flex:1 0 auto;display:flex;flex-direction:column;justify-content:center}
+.er-lb{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;padding-top:40px}
+.er-n{display:flex;justify-content:space-between;align-items:center;font-size:clamp(80px,calc((100vw - 2*var(--pad))/2.2),600px);font-weight:800;line-height:.8;letter-spacing:-.045em;margin:.1em .024em .12em -.026em}
+.er-n span{display:block}
+.er-o{position:relative;top:-.02em;flex:none;width:.708em;height:.708em;border-radius:50%;background:radial-gradient(circle,var(--acf) 0 7%,var(--ac) 7% 24%,var(--acf) 24% 26%,var(--ac) 26% 46%,var(--acf) 46% 48%,var(--ac) 48%)}
+.er-o::before,.er-o::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--ac);opacity:0;animation:er-rip 3.2s ease-out infinite}
+.er-o::after{animation-delay:1.6s}
+@keyframes er-rip{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+.er-cp{border-top:1px solid var(--line);padding:40px 0 64px}
+.er-q{font-size:clamp(26px,4.6vw,68px);font-weight:800;line-height:1;letter-spacing:-.035em;text-transform:uppercase;margin:0 0 32px;max-width:14em}
+.er-hl{display:inline-block;background:var(--ac);color:var(--acf);padding:0 .08em}
+.er-ac{display:flex;gap:12px;flex-wrap:wrap}
+.er-btn{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 28px;box-sizing:border-box;background:var(--ac);color:var(--acf);border:1px solid var(--ac);font-size:18px;font-weight:500;transition:all .2s}
+.er-btn:hover{background:transparent;color:var(--ac)}
+.er-btn.er-s{background:transparent;color:var(--fg);border-color:var(--line)}
+.er-btn.er-s:hover{border-color:var(--ac);color:var(--ac)}
+.er-mq{background:var(--ac);color:var(--acf);overflow:hidden;white-space:nowrap;padding:22px 0}
+.er-mt{display:inline-block;animation:er-mq 30s linear infinite;font-weight:800;font-size:clamp(28px,4vw,56px);letter-spacing:-.02em;text-transform:uppercase}
+@keyframes er-mq{to{transform:translateX(-50%)}}
+.er-ft{display:flex;justify-content:space-between;gap:8px;padding:24px 0 32px}
+@media (max-width:560px){.er-tg{margin-left:12px}.er-ft{flex-direction:column}.er-ac .er-btn{flex:1 1 100%;justify-content:center}.er-cp{padding-bottom:48px}}
+@media (prefers-reduced-motion:reduce){.er-o::before,.er-o::after,.er-mt{animation:none}}
+</style>
+<div class="er-pg">
+<div class="er-w er-main">
+<header class="er-top"><b class="er-nm">&#1040;&#1083;&#1077;&#1082;&#1089;&#1077;&#1081; &#1059;&#1084;&#1077;&#1088;&#1077;&#1085;&#1082;&#1086;&#1074;</b><div class="er-tr"><div class="er-m"><span class="er-dot"></span>&#1054;&#1096;&#1080;&#1073;&#1082;&#1072; 404</div><button class="er-tg" type="button" aria-label="&#1055;&#1077;&#1088;&#1077;&#1082;&#1083;&#1102;&#1095;&#1080;&#1090;&#1100; &#1090;&#1077;&#1084;&#1091;"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button></div></header>
+<div class="er-lb er-m"><span>(404) &#1057;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072; &#1085;&#1077; &#1085;&#1072;&#1081;&#1076;&#1077;&#1085;&#1072;</span><span>&#1058;&#1072;&#1082;&#1086;&#1075;&#1086; &#1072;&#1076;&#1088;&#1077;&#1089;&#1072; &#1085;&#1077;&#1090;</span></div>
+<div class="er-n" role="img" aria-label="404"><span aria-hidden="true">4</span><i class="er-o" aria-hidden="true"></i><span aria-hidden="true">4</span></div>
+<section class="er-cp">
+<p class="er-q">&#8230;&#1080; &#1103;&#160;&#1091;&#1087;&#1072;&#1083; <span class="er-hl">&#1074; &#1083;&#1091;&#1078;&#1091;</span>, &#1080;&#160;&#1074;&#160;&#1084;&#1077;&#1085;&#1103; &#1089;&#1090;&#1088;&#1077;&#1083;&#1103;&#1083;&#1080;&#8230;</p>
+<div class="er-ac"><a class="er-btn" href="https://alexey-umerenkov.tilda.ws">&#1042;&#1077;&#1088;&#1085;&#1091;&#1090;&#1100;&#1089;&#1103; &#1085;&#1072; &#1075;&#1083;&#1072;&#1074;&#1085;&#1091;&#1102;</a><a class="er-btn er-s" href="https://t.me/alexey_umerenkov">&#1053;&#1072;&#1087;&#1080;&#1089;&#1072;&#1090;&#1100; &#1074; Telegram</a></div>
+</section>
+</div>
+<div class="er-mq"><div class="er-mt"><span>404 / &#1057;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072; &#1085;&#1077; &#1085;&#1072;&#1081;&#1076;&#1077;&#1085;&#1072; / 404 / &#1057;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072; &#1085;&#1077; &#1085;&#1072;&#1081;&#1076;&#1077;&#1085;&#1072; / </span><span>404 / &#1057;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072; &#1085;&#1077; &#1085;&#1072;&#1081;&#1076;&#1077;&#1085;&#1072; / 404 / &#1057;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072; &#1085;&#1077; &#1085;&#1072;&#1081;&#1076;&#1077;&#1085;&#1072; / </span></div></div>
+<div class="er-w"><div class="er-ft er-m"><span>&#169; 2026 &#1040;&#1083;&#1077;&#1082;&#1089;&#1077;&#1081; &#1059;&#1084;&#1077;&#1088;&#1077;&#1085;&#1082;&#1086;&#1074;</span><span>&#1042;&#1089;&#1077; &#1087;&#1088;&#1072;&#1074;&#1072; &#1079;&#1072;&#1097;&#1080;&#1097;&#1077;&#1085;&#1099;</span></div></div>
+</div>
+<script>
+(function(){var pg=document.querySelector('.er-pg'),tg=document.querySelector('.er-tg'),lm=window.matchMedia('(prefers-color-scheme: light)');
+if(pg&&tg)tg.addEventListener('click',function(){var c=pg.getAttribute('data-theme')||(lm.matches?'light':'dark');pg.setAttribute('data-theme',c==='light'?'dark':'light')});})();
+</script>
+
+</body>
+</html>
